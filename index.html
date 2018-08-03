@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<title>Simple JavaScript Slideshow In 5 Minutes (TraversyMedia)</title>
+</head>
+<body>
+<script>
+	var i = 0;
+	var images = [];
+	var time = 4000;
+	
+	images [0] = 'image1.jpg';
+	images [1] = 'image2.jpg';
+	images [2] = 'image3.jpg';
+	
+	function changeImg() {
+		document.slide.src = images[i];
+	
+		if(i < images.length - 1) {
+			i++;
+		} else {
+			i = 0;
+		}
+		
+		setTimeout("changeImg()", time);
+	}
+	
+	window.onload = changeImg;
+</script>
+
+<img name="slide" width="600" height="600">
+</body></html>

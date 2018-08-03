@@ -1,0 +1,7 @@
+*.URL
+*.lnk
+*.txt
+!sample/*.txt
+*.pyc
+*.sh
+*.log

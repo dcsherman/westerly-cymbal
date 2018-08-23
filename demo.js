@@ -1,3 +1,9 @@
-var _ = require('lodash')
+var fs = require('fs')
 
-console.log(_.random(1,10))
+var data = {
+    name: 'Bob'
+}
+
+fs.writeFile('data.json', JSON.stringify(data), (err) =>{
+    console.log('write finished', err)
+})

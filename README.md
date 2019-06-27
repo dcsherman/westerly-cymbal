@@ -1,1 +1,1 @@
-# westerly-cymbal
+Asynchronous web development concepts in JavaScript and Node.js. A simple chat application, featuring automaitc push notification via WebSockets / Sockets.io.
